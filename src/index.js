@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import DesignNewsBlog from './DesignNewsBlog';
 
 ReactDOM.render(
-  <DesignNewsBlog />,
+  <DesignNewsBlog headerText="Designer News"/>,
   document.getElementById('root')
 );
