@@ -1,2 +1,1 @@
-# react-dn-example
-Basic app on React
+A basic App on React
