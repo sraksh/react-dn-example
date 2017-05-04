@@ -16,88 +16,89 @@ class DesignNewsBlog extends React.Component {
 
     this.state = {
       topList: news,
-      starList: []
+      starList: [],
+      isStarred: ""
     }
   }
 
   showTopList(){
-  	var topList = this.state.topList.slice(0).map(newsitems => Object.assign({}, newsitems));
+    var topList = this.state.topList.slice(0).map(newsitems => Object.assign({}, newsitems));
 
-  	this.setState({
-  		topList,
-  		starList: []
-  	});
+    this.setState({
+      topList,
+      starList: []
+    });
   }
 
   sortByUpvote(id){
-  	var topList = this.state.topList.slice(0).map(newsitems => Object.assign({}, newsitems));
-  	
-  	var currentItem = topList.find(newsitems => newsitems.id === id);
-  	currentItem.upvotes++;
-  	
-  	this.setState({
-  		topList
-  	});
+    var topList = this.state.topList.slice(0).map(newsitems => Object.assign({}, newsitems));
+    
+    var currentItem = topList.find(newsitems => newsitems.id === id);
+    currentItem.upvotes++;
+    
+    this.setState({
+      topList
+    });
   }
 
   rateMe(id){
-  	var topList = this.state.topList.slice(0).map(newsitems => Object.assign({}, newsitems));
-  	var currentItem = topList.find(newsitems => newsitems.id === id);
-  	currentItem.isStarred = true;
+    var topList = this.state.topList.slice(0).map(newsitems => Object.assign({}, newsitems));
+    var currentItem = topList.find(newsitems => newsitems.id === id);
+    currentItem.isStarred = true;
 
-  	this.setState({
-  		topList
-  	});
+    this.setState({
+      topList
+    });
 
   }
 
   unrateMe(id){
-  	var topList = this.state.topList.slice(0).map(newsitems => Object.assign({}, newsitems));
-  	var currentItem = topList.find(newsitems => newsitems.id === id);
-	
-	currentItem.isStarred = false;
-  	
-  	this.setState({
-  		topList
-  	});
+    var topList = this.state.topList.slice(0).map(newsitems => Object.assign({}, newsitems));
+    var currentItem = topList.find(newsitems => newsitems.id === id);
+  
+  currentItem.isStarred = false;
+    
+    this.setState({
+      topList
+    });
   }
 
   sortByStar(){
-  	var topList = this.state.topList.slice(0).map(newsitems => Object.assign({}, newsitems));
-  	var starList = this.state.starList.slice(0).map(item => Object.assign({}, item));
-  	
-  	topList.forEach(itemStarred => {
-  		if(!itemStarred.isStarred){
-  		starList.push(itemStarred.id);
-  	}
-  	});
-  	//console.log(starList)
-  	this.setState({
-  		topList,
-  		starList
-  	});
+    var topList = this.state.topList.slice(0).map(newsitems => Object.assign({}, newsitems));
+    var starList = this.state.starList.slice(0).map(item => Object.assign({}, item));
+    
+    topList.forEach(itemStarred => {
+      if(!itemStarred.isStarred){
+      starList.push(itemStarred.id);
+    }
+    });
+    //console.log(starList)
+    this.setState({
+      topList,
+      starList
+    });
   }
 
   render(){
-  	return (
-  	<div className="container">
+    return (
+    <div className="container">
        <div className="row">
-    		<div className="col-md-12">
-            	<h1>{this.props.headerText}</h1>
+        <div className="col-md-12">
+              <h1>{this.props.headerText}</h1>
             </div>
-    	</div>
+      </div>
 
-    	<DesignNavList sortByStar={this.sortByStar} topList={this.state.topList} showTopList={this.showTopList}/>
+      <DesignNavList sortByStar={this.sortByStar} topList={this.state.topList} showTopList={this.showTopList}/>
 
-    	<DesignNewsList
-    	topList={this.state.topList}
-    	sortByUpvote={this.sortByUpvote} 
-    	rateMe={this.rateMe} 
+      <DesignNewsList
+      topList={this.state.topList}
+      sortByUpvote={this.sortByUpvote} 
+      rateMe={this.rateMe} 
 
-    	unrateMe={this.unrateMe}
-    	starList={this.state.starList} />
+      unrateMe={this.unrateMe}
+      starList={this.state.starList} />
     </div>
-	);
+  );
   }
 }
 export default DesignNewsBlog;

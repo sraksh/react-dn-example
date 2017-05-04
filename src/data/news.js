@@ -1,63 +1,100 @@
 export default [
   {
-  id: 1,
-  story: 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl.',
-  upvotes: 24
-}, {
-  id: 2,
-  story: 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.',
-  upvotes: 1
-}, {
-  id: 3,
-  story: 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.',
-  upvotes: 22
-}, {
-  id: 4,
-  story: 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.',
-  upvotes: 12
-}, {
-  id: 5,
-  story: 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.',
-  upvotes: 1
-}, {
-  id: 6,
-  story: 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.',
-  upvotes: 43
-}, {
-  id: 7,
-  story: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in . Integer ac neque.\n\nDuis bibendum.  aliquet at, feugiat non, pretium quis, lectus.',
-  upvotes: 11
-}, {
-  id: 8,
-  story: 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diams posuere cubilia CurDonec posuere metus vitae ipsum. Aliquam non mauris.',
-  upvotes: 2
-}, {
-  id: 9,
-  story: 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\n.  pede.',
-  upvotes: 16
-}, {
-  id: 10,
-  story: 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus.',
-  upvotes: 35
-}, {
-  id: 11,
-  story: 'Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.',
-  upvotes: 40
-}, {
-  id: 12,
-  story: 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus.',
-  upvotes: 2
-}, {
-  id: 13,
-  story: 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.',
-  upvotes: 45
-}, {
-  id: 14,
-  story: 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.',
-  upvotes: 14
-}, {
-  id: 15,
-  story: 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.',
-  upvotes: 49
-}
+    "posted": "2 months ago",
+    "upvotes": 62,
+    "comments": 66,
+    "designation": "writer",
+    "name": {
+      "last": "Davenport",
+      "first": "Marguerite"
+    },
+    "domain": "mazuda.com",
+    "story": "exercitation elit id amet anim dolore elit Lorem irure qui veniam aliqua",
+    "isStarred": true,
+    "id": "d3d042ab-a5c4-4a2b-84aa-7e67496a79b4"
+  },
+  {
+    "posted": "6 months ago",
+    "upvotes": 10,
+    "comments": 25,
+    "designation": "manager",
+    "name": {
+      "last": "Washington",
+      "first": "Sue"
+    },
+    "domain": "savvy.com",
+    "story": "velit velit sunt cupidatat esse incididunt irure proident reprehenderit minim ex excepteur",
+    "isStarred": true,
+    "id": "01a37ec0-7dba-4945-b750-b149dfcd7a93"
+  },
+  {
+    "posted": "5 months ago",
+    "upvotes": 16,
+    "comments": 75,
+    "designation": "developer",
+    "name": {
+      "last": "Valdez",
+      "first": "Rodriquez"
+    },
+    "domain": "frenex.com",
+    "story": "in culpa labore tempor cillum ullamco qui ex nisi fugiat proident non",
+    "isStarred": true,
+    "id": "6f0bd65a-c104-448b-80fc-cd0d71d53350"
+  },
+  {
+    "posted": "8 months ago",
+    "upvotes": 32,
+    "comments": 32,
+    "designation": "manager",
+    "name": {
+      "last": "Merritt",
+      "first": "Lorene"
+    },
+    "domain": "konnect.com",
+    "story": "anim fugiat irure amet duis duis fugiat aliqua laborum cillum culpa occaecat",
+    "isStarred": false,
+    "id": "06540e6d-d295-47ea-aa24-b0e766b4f00a"
+  },
+  {
+    "posted": "2 months ago",
+    "upvotes": 53,
+    "comments": 70,
+    "designation": "designer",
+    "name": {
+      "last": "Pace",
+      "first": "Parker"
+    },
+    "domain": "gink.com",
+    "story": "aliqua ullamco labore culpa labore proident anim qui laborum reprehenderit cillum ea",
+    "isStarred": false,
+    "id": "d4c712de-c8ff-46d2-86a3-417b9f6a6d72"
+  },
+  {
+    "posted": "a month ago",
+    "upvotes": 69,
+    "comments": 47,
+    "designation": "developer",
+    "name": {
+      "last": "Rice",
+      "first": "Rosella"
+    },
+    "domain": "eweville.com",
+    "story": "nulla in minim occaecat ullamco cupidatat cillum cupidatat magna veniam veniam exercitation",
+    "isStarred": true,
+    "id": "f27b0551-d0fb-4178-b974-7f05640133e5"
+  },
+  {
+    "posted": "10 months ago",
+    "upvotes": 12,
+    "comments": 3,
+    "designation": "designer",
+    "name": {
+      "last": "Schmidt",
+      "first": "Harris"
+    },
+    "domain": "reversus.com",
+    "story": "aute Lorem aliqua ipsum veniam nulla adipisicing voluptate anim labore ipsum qui",
+    "isStarred": false,
+    "id": "04147c48-7243-4531-a100-3611c080cc3a"
+  }
 ]
